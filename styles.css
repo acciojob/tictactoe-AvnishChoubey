@@ -1,1 +1,12 @@
 /*  your css code here. If applicable */
+.container {
+	text-align: center;
+}
+
+input {
+	margin-bottom: 20px;
+}
+
+button {
+	border: 1px solid black;
+}
