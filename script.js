@@ -6,8 +6,8 @@ let currentPlayer;
 startBtn.addEventListener('click', (event) => {
     event.preventDefault();
 
-    player1 = document.getElementById("player-1").value;
-    player2 = document.getElementById("player-2").value;
+    player1 = document.getElementById("player1").value;
+    player2 = document.getElementById("player2").value;
 
     currentPlayer = String(player1);
 
@@ -37,7 +37,7 @@ function handleCellClick(event) {
     const index = parseInt(event.target.getAttribute('id')) - 1;
     if(board[index]) return;
 
-    board[index] = (currentPlayer === player1) ? 'X' : 'O';
+    board[index] = (currentPlayer === player1) ? 'x' : 'o';
     event.target.textContent = board[index];
 
     if(checkWinner()) 

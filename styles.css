@@ -1,90 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
-
-
-body {
-    background-color:black;
-    color:white;
-}
-
-a {
-    cursor: pointer;
-}
-
-.header {
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
-    font-family: Ruda;
-    font-weight: 400;
-    font-size: 24px;
-}
-
-.header > h1 {
-    margin-left: 40px;
-    margin-right: 40px;
-    font-size: 29px;
-}
-
-.page-navigation {
-    width: 100%;
-    margin: 30px 40px;
-    display: flex;
-    justify-content: space-evenly;
-    color: white;
-    text-decoration: none;
-}
-
-.social-media {
-    display: flex;
-    justify-content: center;
-    margin: 30px 40px;
-}
-
-.logo {
-    height: 50px;
-    width: 50px;
-}
-
-.image-container {
-    position: relative;
-}
-
-.main-image {
-    width: 100vw;
-    height: 100vh;
-}
-
-.heading-content {
-    position: absolute;
-    top: 50%;
-    transform: translate(0%, -50%);
-    font-size: 101px;
-    line-height: 108.5px;
-    font-weight: 700;
-    letter-spacing: 9%;
-    font-family: Quattrocento;
-    width: 900px;
-    text-align: center;
-}
-
-.text-content {
-    position: absolute;
-    text-align: left;
-    top: 70%;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
 body {
     text-align: center;
     font-family: Arial, sans-serif;
@@ -143,7 +56,7 @@ body {
     align-items: center;
     background-color: #fff;
     border: 2px solid #333;
-    font-size: 32px;
+    font-size: 50px;
     cursor: pointer;
 }
 
