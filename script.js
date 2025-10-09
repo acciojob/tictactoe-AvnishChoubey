@@ -39,7 +39,7 @@ function handleCellClick(event) {
 
     if(checkWinner()) 
     {
-        document.getElementsByClassName('message')[0].textContent = `${currentPlayer}, congratulations you won!`;
+        document.getElementsByClassName('message')[0].textContent = `${currentPlayer} congratulations you won!`;
         document.getElementsByClassName('message')[0].style.display = 'block';
         return;
     }
