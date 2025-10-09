@@ -6,10 +6,7 @@ let currentPlayer;
 startBtn.addEventListener('click', (event) => {
     event.preventDefault();
 
-    player1 = document.getElementById("player1").value;
-    player2 = document.getElementById("player2").value;
-
-    currentPlayer = String(player1);
+    currentPlayer = "Player1";
 
     document.getElementsByClassName('input-container')[0].style.display = 'none';
     document.getElementsByClassName('game-container')[0].style.display = 'block';
@@ -37,7 +34,7 @@ function handleCellClick(event) {
     const index = parseInt(event.target.getAttribute('id')) - 1;
     if(board[index]) return;
 
-    board[index] = (currentPlayer === player1) ? 'x' : 'o';
+    board[index] = (currentPlayer === "Player1") ? 'x' : 'o';
     event.target.textContent = board[index];
 
     if(checkWinner()) 
@@ -48,7 +45,7 @@ function handleCellClick(event) {
     }
 
     // Switch turn
-    currentPlayer = (currentPlayer === player1) ? player2 : player1;
+    currentPlayer = (currentPlayer === "Player1") ? "Player2" : "Player1";
     document.getElementsByClassName('message')[0].textContent = `${currentPlayer}, you're up`;
 }
 
